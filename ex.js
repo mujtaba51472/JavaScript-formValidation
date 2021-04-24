@@ -19,17 +19,15 @@ function checkInputs() {
        var password2Value = password2.value.trim();
 
 
-
+//       user name
        if (usernameValue === "" || null) {
               setErrorFor(username, 'username cannot be blank')
        }
-
-
        else {
               setSuccessFor(username, 'valid');
        }
 
-       email
+       // email
        if (emailValue === '' || null) {
               setErrorFor(useremail, 'email cannot be blank');
        }
@@ -65,7 +63,7 @@ function checkInputs() {
        }
 
        else {
-              setSuccessFor(password2, "Matched");
+              setSuccessFor(password2, " Pssword matched Matched");
        }
 
 }
@@ -88,5 +86,32 @@ function setSuccessFor(input, validVal) {
 }
 
 function isEmail(useremail) {
-       return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+       return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(useremail);
+}
+
+function showPass(){
+       if(password.type==="password"){
+              password.type="text";
+
+
+       }
+       else{
+
+              password.type="password";
+       }
+
+}
+
+
+function showPass2(){
+       if(password2.type==="password"){
+              password2.type="text";
+
+
+       }
+       else{
+
+              password2.type="password";
+       }
+
 }

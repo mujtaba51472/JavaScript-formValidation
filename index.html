@@ -11,14 +11,14 @@
               integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
               crossorigin="anonymous">
 
-       <title>Fomr Validation</title>
+       <title>Form Validation</title>
        <link rel="stylesheet" href="style.css">
        <link href="fontawesome/css/all.css" rel="stylesheet">
 </head>
 
 <body>
        <div class="container bg-dark">
-              <form action="" class="p-5 my-5">
+              <form action="" class="p-3">
                      <div class="mb-3 my-5   formControl">
                             <label for="username" class="form-label">User Name</label>
                             <input type="text" class="form-control" value="" id="username"
@@ -46,6 +46,7 @@
                             <i class="fas fa-check"></i>
                             <i class="fas fa-exclamation"></i>
                             <small>error message</small>
+                            <i class="fas fa-eye " id="eye" onclick="showPass()"></i>
                      </div>
                      <div class="formControl">
                             <label for="password2" class="form-label">Confirm Password</label>
@@ -54,6 +55,8 @@
                             <i class="fas fa-check"></i>
                             <i class="fas fa-exclamation"></i>
                             <small>error message</small>
+                            <i class="fas fa-eye " id="eye" onclick="showPass2()"></i>
+
                      </div>
 
 
