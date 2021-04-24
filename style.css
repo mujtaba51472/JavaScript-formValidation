@@ -1,0 +1,61 @@
+form {
+  color: red;
+}
+
+.formControl {
+  position: relative;
+}
+
+.formControl .fa-check {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  font-size: 25px;
+  color: rgb(42, 204, 42);
+}
+
+.formControl .fa-exclamation {
+  visibility: hidden;
+  color: crimson;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  font-size: 25px;
+}
+
+.formControl small {
+  color: crimson;
+  visibility: hidden;
+}
+
+.formControl.success .fa-check {
+  visibility: visible;
+}
+
+.formControl.success small {
+  visibility: visible;
+  color: green;
+}
+
+.formControl.success input {
+  border: 2px solid green;
+}
+
+.formControl.error .fa-exclamation {
+  visibility: visible;
+}
+
+.formControl.error small {
+  visibility: visible;
+}
+
+.formControl input:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: grey;
+}
+
+.formControl.error input {
+  border: 2px solid red;
+}
